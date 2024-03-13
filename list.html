@@ -1,0 +1,228 @@
+<style>
+    .container {
+      background-color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 71px 60px 39px;
+    }
+  
+    @media (max-width: 991px) {
+      .container {
+        padding: 0 20px;
+      }
+    }
+  
+    .content-wrapper {
+      display: flex;
+      width: 100%;
+      max-width: 1058px;
+      flex-direction: column;
+    }
+  
+    @media (max-width: 991px) {
+      .content-wrapper {
+        max-width: 100%;
+      }
+    }
+  
+    .header {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      gap: 20px;
+    }
+  
+    @media (max-width: 991px) {
+      .header {
+        max-width: 100%;
+        flex-wrap: wrap;
+      }
+    }
+  
+    .search-bar {
+      background-color: #fff;
+      display: flex;
+      flex : 1;
+      justify-content: space-between;
+      gap: 400px;
+      padding: 13px 21px;
+      border: none;
+      outline: none ;
+    }
+
+    .search-container {
+  display: flex;
+  align-items: center; /* Center vertically */
+  justify-content: space-between; /* Space items evenly */
+  padding: 5px 20px; /* Adjust padding as needed */
+  border: 1px solid #000000; /* Add border for visualization */
+  border-radius: 50px;
+}
+
+    @media (max-width: 991px) {
+      .search-bar {
+        max-width: 100%;
+        flex-wrap: wrap;
+        padding-right: 20px;
+      }
+    }
+    
+    .search-icon {
+      width: 25px;
+      object-fit: auto;
+      object-position: center;
+      margin-left: 10px;
+    }
+    
+    .profile-icon {
+      width: 20px;
+      object-position: center;
+      margin: auto 0;
+      margin-right: 10px;
+    }
+  
+    .filter-icon {
+      aspect-ratio: 1;
+      object-fit: auto;
+      object-position: center;
+      width: 20px;
+      margin: auto 0;
+    }
+
+    a{
+        text-decoration: none;
+        color: #000;
+    }
+    
+    .filter-icon img {
+      width: 100%;
+      height: 100%;
+    }
+  
+    .nav-menu {
+        align-self: end;
+      display: flex;
+      margin-top: 20px;
+      justify-content: space-between;
+      gap: 20px;
+      font-size: 20px;
+      color: #000;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+  
+    @media (max-width: 991px) {
+      .nav-menu {
+        white-space: initial;
+      }
+    }
+  
+    .nav-item {
+      font-family: Cambay, sans-serif;
+    }
+  
+    .movie-section {
+      display: flex;
+      margin-top: 40px;
+      flex-direction: column;
+      padding: 0 73px;
+    }
+  
+    @media (max-width: 991px) {
+      .movie-section {
+        max-width: 100%;
+        margin-top: 40px;
+        padding: 0 20px;
+      }
+    }
+  
+    .section-title {
+      color: #000;
+      font: 700 30px Cambay, sans-serif;
+    }
+  
+    @media (max-width: 991px) {
+      .section-title {
+        max-width: 100%;
+      }
+    }
+  
+    .movie-row {
+      display: flex;
+      margin-top: 24px;
+      gap: 3px;
+    }
+  
+    @media (max-width: 991px) {
+      .movie-row {
+        flex-wrap: wrap;
+      }
+    }
+  
+    .movie-poster {
+      border: 1px solid rgba(0, 0, 0, 1);
+      background-color: #d9d9d9;
+      width: 180px;
+      height: 220px;
+    }
+  </style>
+  
+  <main class="container">
+    <div class="content-wrapper">
+      <header class="header">
+        <div class="search-container">
+          
+            <img src="movie-reel.png " alt="Search icon" class="search-icon" />
+            <input type="text" class="search-bar" />    
+            <img src="magnifying-glass.png" alt="Profile icon" class="profile-icon" />
+        
+    </div>
+        <nav class="nav-menu">
+          <a href="index.html" class="nav-item">Home</a>
+          <a href="#" class="nav-item">Dairy</a>
+          <a href="list.html" class="nav-item">List</a>
+          <a href="#" class="nav-item">Watchlist</a>
+          <a href="login.html"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" id="logout"><path fill="#000" fill-rule="evenodd" d="M3 13h12v-2H3v2Z" clip-rule="evenodd"></path>
+            <path fill="#000" fill-rule="evenodd" d="m5.793 7.793-3.5 3.5a1 1 0 0 0 0 1.414l3.5 3.5 1.414-1.414L4.414 12l2.793-2.793-1.414-1.414zM8 4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-3h2v2h10V5H10v2H8V4z" clip-rule="evenodd"></path></svg>
+        </a>
+        </nav>
+      </header>
+      
+      <section class="movie-section">
+        <h2 class="section-title">Best of 2023</h2>
+        <div class="movie-row">
+          <div class="movie-poster"></div>
+          <div class="movie-poster"></div>
+          <div class="movie-poster"></div>
+          <div class="movie-poster"></div>
+          <div class="movie-poster"></div>
+        </div>
+        <div class="movie-row">
+          <div class="movie-poster"></div>
+          <div class="movie-poster"></div>
+          <div class="movie-poster"></div>
+          <div class="movie-poster"></div>
+          <div class="movie-poster"></div>
+        </div>
+      </section>
+  
+      <section class="movie-section">  
+        <h2 class="section-title">Oscar 2023</h2>
+        <div class="movie-row">
+          <div class="movie-poster"></div>
+          <div class="movie-poster"></div>
+          <div class="movie-poster"></div>
+          <div class="movie-poster"></div>
+          <div class="movie-poster"></div>
+        </div>
+        <div class="movie-row">
+          <div class="movie-poster"></div>
+          <div class="movie-poster"></div>
+          <div class="movie-poster"></div>
+          <div class="movie-poster"></div>
+          <div class="movie-poster"></div>
+        </div>
+      </section>
+    </div>
+  </main>

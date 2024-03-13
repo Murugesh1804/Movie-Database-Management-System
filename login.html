@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .login-container {
+            display: flex;
+            align-items: center;  
+            margin-right: -750px;          
+            justify-content: center;
+            min-height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        .image-wrapper {
+            display: flex;
+            justify-content: center;
+            position: relative;
+            width: 100%;
+            max-width: 460px;
+            overflow: hidden;
+            border-radius: 8px;
+            
+        }
+
+        .background-image {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .form-container {
+            position: relative;
+            z-index: 2;
+            width: calc(100% - 40px);
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.9);
+        }
+
+        .form-content {
+            width: 100%;
+            max-width: 400px;
+        }
+
+        .login-title {
+            margin-bottom: 20px;
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            text-align: center;
+        }
+
+        .input-field {
+            width: 100%;
+            height: 44px;
+            margin-bottom: 20px;
+            padding: 0 15px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .login-button {
+            width: 100%;
+            padding: 10px 0;
+            font-size: 16px;
+            font-weight: bold;
+            color: #000000;
+            border: solid 2px black;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .login-button:hover {
+            background-color: #8c8c8c;
+        }
+
+        .sign-up-link {
+            margin-top: 15px;
+            font-size: 14px;
+            text-align: center;
+        }
+
+        .bold-text {
+            font-weight: bold;
+            cursor: pointer;
+            color: #000000;
+        }
+    </style>
+</head>
+<body>
+    <img src="10415d2d0accbbd6ae2ce6018fea86b9.jpg" alt="Background Image" class="background-image">
+    <div class="login-container">
+        <div class="image-wrapper">
+            <div class="form-container">
+                <form class="form-content">
+                    <h2 class="login-title">LOGIN</h2>
+                    <input type="email" class="input-field" placeholder="Email" required>
+                    <input type="password" class="input-field" placeholder="Password" required>
+                    <button type="submit" class="login-button">LOGIN</button>
+                    <div class="sign-up-link">Don't have an account? <a href="signup.html" class="bold-text">SignUp</a></div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

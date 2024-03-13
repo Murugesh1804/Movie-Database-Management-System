@@ -1,0 +1,189 @@
+<style>
+    .container {
+      background-color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 50px 60px 80px;
+    }
+    
+    @media (max-width: 991px) {
+      .container {
+        padding: 0 20px;
+      }
+    }
+    
+    .content-wrapper {
+      display: flex;
+      width: 100%;
+      max-width: 1060px;
+      flex-direction: column;
+    }
+    
+    @media (max-width: 991px) {
+      .content-wrapper {
+        max-width: 100%;
+      }
+    }
+    
+    .header {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 0 1px;
+    }
+    
+    @media (max-width: 991px) {
+      .header {
+        max-width: 100%;
+        flex-wrap: wrap;
+      }
+    }
+    
+    .search-bar {
+      background-color: #fff;
+      display: flex;
+      flex : 1;
+      justify-content: space-between;
+      gap: 400px;
+      padding: 13px 21px;
+      border: none;
+      outline: none ;
+    }
+
+    .search-container {
+  display: flex;
+  align-items: center; /* Center vertically */
+  justify-content: space-between; /* Space items evenly */
+  padding: 5px 20px; /* Adjust padding as needed */
+  border: 1px solid #000000; /* Add border for visualization */
+  border-radius: 50px;
+}
+
+    @media (max-width: 991px) {
+      .search-bar {
+        max-width: 100%;
+        flex-wrap: wrap;
+        padding-right: 20px;
+      }
+    }
+    
+    .search-icon {
+      width: 25px;
+      object-fit: auto;
+      object-position: center;
+      margin-left: 10px;
+    }
+    
+    .profile-icon {
+      width: 20px;
+      object-position: center;
+      margin: auto 0;
+      margin-right: 10px;
+    }
+    
+    .navigation {
+      align-self: end;
+      display: flex;
+      margin-top: 20px;
+      justify-content: space-between;
+      gap: 20px;
+      font-size: 20px;
+      color: #000;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+    
+    @media (max-width: 991px) {
+      .navigation {
+        white-space: initial;
+      }
+    }
+    
+    .nav-link {
+      font-family: Cambay, sans-serif;
+    }
+    
+    .section-title {
+      color: #000;
+      margin-top: 54px;
+      font: 700 25px Cambay, sans-serif;
+    }
+    
+    @media (max-width: 991px) {
+      .section-title {
+        max-width: 100%;
+        margin-top: 40px;
+      }
+    }
+    
+    .movie-list {
+      display: flex;
+      margin-top: 36px;
+      justify-content: space-between;
+      gap: 20px;
+    }
+    
+    @media (max-width: 991px) {
+      .movie-list {
+        flex-wrap: wrap;
+      }
+    }
+    
+    .movie-poster {
+      width: 145px;
+      height: 205px;
+      border: 1px solid rgba(0, 0, 0, 1);
+      background-color: #d9d9d9;
+    }
+
+    a{
+        text-decoration: none;
+        color: #000;
+    }
+    </style>
+    
+    <main class="container">
+      <div class="content-wrapper">
+        <header class="header">
+        <div class="search-container">
+          
+            <img src="movie-reel.png " alt="Search icon" class="search-icon" />
+            <input type="text" class="search-bar" />    
+            <img src="magnifying-glass.png" alt="Profile icon" class="profile-icon" />
+        
+    </div>
+          <nav class="navigation">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="#" class="nav-link">Dairy</a>
+            <a href="list.html" class="nav-link">List</a>
+            <a href="#" class="nav-link">Watchlist</a>
+          </nav>
+        </header>
+        
+        <section>
+          <h2 class="section-title">New Releases</h2>
+          <div class="movie-list">
+            <img src="#" alt="" class="movie-poster" />
+            <img src="#" alt="" class="movie-poster" />
+            <img src="#" alt="" class="movie-poster" />
+            <img src="#" alt="" class="movie-poster" />
+            <img src="#" alt="" class="movie-poster" />
+            <img src="#" alt="" class="movie-poster" />
+          </div>
+        </section>
+        
+        <section>
+          <h2 class="section-title">Recommendation</h2>
+          <div class="movie-list">
+            <img src="#" alt="" class="movie-poster" />
+            <img src="#" alt="" class="movie-poster" />
+            <img src="#" alt="" class="movie-poster" />
+            <img src="#" alt="" class="movie-poster" />
+            <img src="#" alt="" class="movie-poster" />
+            <img src="#" alt="" class="movie-poster" />
+          </div>
+        </section>
+      </div>
+    </main>
